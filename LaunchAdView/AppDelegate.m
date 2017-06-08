@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "LaunchAdView.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) LaunchAdView *launchAdView;
 
 @end
 
@@ -45,6 +48,33 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setLaunchAdvertisement
+{
+    [self.window makeKeyAndVisible];
+    self.launchAdView = [[LaunchAdView alloc] init];
+    self.launchAdView.imageURL = @"";
+    self.launchAdView.getLaunchImageAdViewType(FullScreenAdType);
+    // 各种点击事件的回调
+    self.launchAdView.clickBlock = ^(clickType type){
+        switch (type) {
+            case clickAdType:
+                // 点击广告回调
+                NSLog(@"点击广告回调");
+                break;
+            case skipAdType:
+                NSLog(@"点击跳过回调");
+                break;
+            case overtimeAdType:
+                NSLog(@"倒计时完成后的回调");
+                break;
+            default:
+                break;
+        }
+    };
+    
+    [self.window addSubview: self.launchAdView];
 }
 
 

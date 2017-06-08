@@ -15,6 +15,9 @@
 		1111B8971EE953170077D756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1111B8951EE953170077D756 /* LaunchScreen.storyboard */; };
 		1111B8A21EE953170077D756 /* LaunchAdViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1111B8A11EE953170077D756 /* LaunchAdViewTests.m */; };
 		1111B8AD1EE953170077D756 /* LaunchAdViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1111B8AC1EE953170077D756 /* LaunchAdViewUITests.m */; };
+		1111B8BB1EE954EC0077D756 /* Masonry in Resources */ = {isa = PBXBuildFile; fileRef = 1111B8BA1EE954EC0077D756 /* Masonry */; };
+		1111B8BD1EE955200077D756 /* DACircularProgress in Resources */ = {isa = PBXBuildFile; fileRef = 1111B8BC1EE955200077D756 /* DACircularProgress */; };
+		1111B8C01EE955990077D756 /* LaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1111B8BF1EE955990077D756 /* LaunchAdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		1111B8A81EE953170077D756 /* LaunchAdViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchAdViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1111B8AC1EE953170077D756 /* LaunchAdViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAdViewUITests.m; sourceTree = "<group>"; };
 		1111B8AE1EE953170077D756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1111B8BA1EE954EC0077D756 /* Masonry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Masonry; sourceTree = "<group>"; };
+		1111B8BC1EE955200077D756 /* DACircularProgress */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DACircularProgress; sourceTree = "<group>"; };
+		1111B8BE1EE955990077D756 /* LaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAdView.h; sourceTree = "<group>"; };
+		1111B8BF1EE955990077D756 /* LaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +108,14 @@
 		1111B8861EE953170077D756 /* LaunchAdView */ = {
 			isa = PBXGroup;
 			children = (
+				1111B8BA1EE954EC0077D756 /* Masonry */,
+				1111B8BC1EE955200077D756 /* DACircularProgress */,
 				1111B88A1EE953170077D756 /* AppDelegate.h */,
 				1111B88B1EE953170077D756 /* AppDelegate.m */,
 				1111B88D1EE953170077D756 /* ViewController.h */,
 				1111B88E1EE953170077D756 /* ViewController.m */,
+				1111B8BE1EE955990077D756 /* LaunchAdView.h */,
+				1111B8BF1EE955990077D756 /* LaunchAdView.m */,
 				1111B8901EE953170077D756 /* Main.storyboard */,
 				1111B8931EE953170077D756 /* Assets.xcassets */,
 				1111B8951EE953170077D756 /* LaunchScreen.storyboard */,
@@ -249,8 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1111B8BB1EE954EC0077D756 /* Masonry in Resources */,
 				1111B8971EE953170077D756 /* LaunchScreen.storyboard in Resources */,
 				1111B8941EE953170077D756 /* Assets.xcassets in Resources */,
+				1111B8BD1EE955200077D756 /* DACircularProgress in Resources */,
 				1111B8921EE953170077D756 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1111B8C01EE955990077D756 /* LaunchAdView.m in Sources */,
 				1111B88F1EE953170077D756 /* ViewController.m in Sources */,
 				1111B88C1EE953170077D756 /* AppDelegate.m in Sources */,
 				1111B8891EE953170077D756 /* main.m in Sources */,
@@ -432,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = P.R.China.LaunchAdView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -444,6 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = P.R.China.LaunchAdView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
@@ -516,6 +532,7 @@
 				1111B8B31EE953170077D756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1111B8B41EE953170077D756 /* Build configuration list for PBXNativeTarget "LaunchAdViewTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				1111B8B61EE953170077D756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1111B8B71EE953170077D756 /* Build configuration list for PBXNativeTarget "LaunchAdViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				1111B8B91EE953170077D756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
