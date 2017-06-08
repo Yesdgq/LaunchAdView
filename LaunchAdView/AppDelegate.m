@@ -53,6 +53,10 @@
 - (void)setLaunchAdvertisement
 {
     [self.window makeKeyAndVisible];
+    
+    NSString *str = nil;
+    str = @"http://img.shenghuozhe.net/shz/2016/05/07/750w_1224h_043751462609867.jpg";
+    str = @"http://192.167.1.6:15414//multimedia/image/EPOSIDE/2017/05/24/2017_05_24_10_05_27_590.jpg";
     self.launchAdView = [[LaunchAdView alloc] init];
     self.launchAdView.imageURL = @"";
     self.launchAdView.getLaunchImageAdViewType(FullScreenAdType);
